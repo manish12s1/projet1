@@ -1,0 +1,293 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="icon" href= "C:\Users\saini\Downloads\saini.jpg" type="image/x-icon">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="./css/search.css">
+    <title>Online Shopping Site for Fashion, Electronics, Home & More </title>
+</head>
+<body> 
+      <a href="otherfile.html">Go to Other File</a>
+     <!-- Navigation Bar -->
+    <section class="navbar">
+      <div class="uppernav">
+        <a  
+        /></a>
+        <div class="navSearch">
+          <img
+            src="https://i.postimg.cc/90c6jfMm/search-interface-symbol.png"
+            alt="search"
+            class="NavSearchIcon"
+          />
+          <input
+            type="text"
+            id="keyword"
+            class="searchContainer"
+            placeholder="Try Saree,Kurthi or Seach by Product Code"
+            onkeypress="handleKeyPress(event)"
+          />
+        </div>
+        <div class="navRightSec">
+          <div class="navAppPromo">
+            <img
+              src="https://i.postimg.cc/sXqr2Fz4/smartphone.png"
+              alt="app"
+              class="navAppIcon"
+            />
+            <span id="tagDwn">Download App</span>
+          </div>
+          <span class="navSuplier">Become a Supplier</span>
+          <div class="navProfile" onclick="window.location.href='SignUpPage.html'">
+            <img
+              
+            />
+            <span
+              
+            >
+          </div>
+          <div class="navcart" onclick="window.location.href='CartPage.html'">
+            <img
+              src="https://i.postimg.cc/sXBgkwMf/bag.png"
+              alt="cart"
+              class="cartIcon"
+            />
+            <span
+              class="SignUpHover"
+              onclick="window.location.href='CartPage.html'"
+              >Cart</span
+            >
+          </div>
+          <div id="cart-item-counter">0</div>
+        </div>
+      </div>
+      <div class="bottomNav">
+        <div class="nav-menu">
+          <ul>
+            <li class="dropdown" onclick="window.location.href='viewall.html'">View All</li>
+            <li class="dropdown" onclick="window.location.href='WomenWestern.html'">Women Western
+              <div class="submenu">
+                <div class="subCat">
+                  <span class="catHeading">Topwear</span>
+                  <span>Dresses</span>
+                  <span>Tops</span>
+                  <span>Sweaters</span>
+                  <span>Jumpsuits</span>
+                </div>
+                <div class="subCat" style="margin-left: 1em;">
+                  <span class="catHeading">Bottomwear</span>
+                  <span>Jeans</span>
+                  <span>Jeggings</span>
+                  <span>Palazzos</span>
+                  <span>Shorts</span>
+                  <span>Skirts</span>
+                </div>
+              </div>
+            </li>
+            <li onclick="window.location.href='saini.html'">Jewellery & Accessories</li>
+            <li onclick="window.location.href='Men.html'">Men</li>
+            <li>Beauty & Health</li>
+            <li>Bath & Body</li>
+            <li>Bags & Footwear</li>
+            <li>Home & Kitchen</li>
+            <li>Kids</li>
+            <li>Electronics</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="searchWindow">
+      <div class="searchCloseBtn">
+        <img src="https://i.postimg.cc/Lgdct409/close.png" alt="">
+      </div>
+      <div id="searchWindowDiv">
+        
+      </div>
+    </section>
+  <section class="blurBack"></section>
+
+    <!-- Homepage Design Clone -->
+    <div class="addImg01">
+        <div class="text">
+            <h1>
+            Lowest Prices Best Quality Shopping
+            </h1>
+            <p id="para">50 lakh+ Styles | 650+ categories</p>
+            
+        </div>
+        <div class="image">
+            <img src= "C:\Users\saini\Downloads\saini.jpg" alt="">
+        </div>
+    </div>
+    <div id="CatHeader">
+        <div><hr></div>
+        <div><h1 id="cat">Top Categories to choose from</h1></div>
+        <div><hr></div>
+    </div>
+    <div class="addImg02">
+        <div class="threeimg">
+            <div class="firstimg"><img src="https://images.meesho.com/images/marketing/1631611172021.png" alt=""></div>
+            <div class="secondimg"><img src="https://images.meesho.com/images/marketing/1631610854491.png" alt=""></div>
+            <div class="thirdimg"><img src="https://images.meesho.com/images/marketing/1631611208025.png" alt=""></div>
+        </div>
+    </div>
+    <div class="addImg03">
+        <div id="homeobtn" ><h1>Homecare</h1>
+            <div>.</div>
+            <a id="viewall" href="#">VIEW ALL</a>
+        </div>
+        <div class="imageone">
+            <img src="https://images.meesho.com/images/marketing/1629883981751.png" alt="" width="100%">
+            <a href="#"><button id="btn1">BedSheets</button></a>
+        </div>
+        <div class="imageone">
+            <img src="https://images.meesho.com/images/marketing/1629884011960.png" width="100%" alt="">
+            <a href="#"><button id="btn1">Kitchenware</button></a>
+        </div>
+        <div class="imageone">
+            <img src="https://images.meesho.com/images/marketing/1629883997863.png" width="90%" alt="">
+            <a href="#"><button id="btn1">Carpets</button></a>
+        </div>
+    </div>
+    <div class="become">
+        <div class="split"> 
+            
+        </div>
+        <div class="split-1">
+        <h1 id="firsthead">Become a reseller and</h1>
+        <h1 id="secondhead">Start your Online Business
+            with Zero Investment</h1>
+        <div class="logos">
+            <div>
+
+            </div>
+            <div><a href="https://play.google.com/store/apps/details?id=com.meesho.supply"><img src="https://meesho.com/_next/static/images/playstore-a7dfd2afcd42f96d491912cbec2d6fa2.png"width="100%" id="android" alt=""></a></div>
+            <div><a href="https://apps.apple.com/us/app/meesho/id1457958492"><img src="https://meesho.com/_next/static/images/appstore-a689c2ac38f3ed1ab7e7b39e98aaf15a.png" id="apple" width ="100%" alt=""></a></div>
+            <div>
+              <a href="https://play.google.com/store/apps/details?id=com.meesho.supply">
+                <img src="https://images.meesho.com/images/pow/playstore-icon.webp"
+                  width="100%" 
+                  id="android" 
+                  alt="PlayStore"
+                >
+              </a>
+            </div>
+            <div >
+              <a  href="https://apps.apple.com/us/app/meesho/id1457958492">
+                <img src="https://images.meesho.com/images/pow/appstore-icon.webp" 
+                  id="apple" 
+                  width ="100%" 
+                  alt="AppleStore"
+                >
+              </a>
+            </div>
+        </div>    
+        </div>
+    </div>
+    <div class="final">
+        <div class="textreg">
+            <h1>Register as a saini Supplier</h1>
+            
+            <h6 id="sell">Sell your products to crores of customers at 0% commission</h6>
+        </div>
+        <div class="threeboxes">
+            <div>
+                <span class="material-icons">
+                    check_circle
+                    </span><h6>Grow Your Business 10X</h6>
+            </div>
+            <div class="dash">
+                |
+            </div>
+            <div>
+                <span class="material-icons">
+                    check_circle
+                    </span><h6>Enjoy 100% Profit</h6>
+            </div>
+            <div class="dash">
+                |
+            </div>
+            <div>
+                <span class="material-icons">
+                    check_circle
+                    </span><h6 >Sell all over India</h6>
+            </div>
+        </div>
+        <div class="signup" id="signup">
+            <button id="signup-btn"><h5>Sign up now</h5></button>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div id="footer">
+        <div>
+            <h2>Shop No-Stop on  saini</h2>
+            <p>Trusted by more than 1 Crore Indians
+             Cash on Delivery | Free Delivery</p>
+             <img src="https://meesho.com/_next/static/images/google-play-button-1f2aa747a3eefa161840b04e057b31ac.png"; alt="" width="47%">
+             <img src="https://meesho.com/_next/static/images/appstore-button-4b171cf04fe0557718dfd2cbf309c61d.png" alt="" width="47%
+             ">
+        </div>
+        <div>
+            <a href="">Careers</a>
+            
+        </div>
+        <div>
+            <a href="">Legal And Policies</a>
+            <a href="">saini Tech Blog</a>
+        </div>
+        <div>
+            <a href=""><h3>Contact Us</h3></a>
+           
+        </div>
+        <div>
+            <a href="">Reach out to us</a>
+            <img src="https://meesho.com/assets/facebook.png" alt="">
+            <img src="https://meesho.com/assets/instagram.png" alt="">
+            <img src="https://meesho.com/assets/youtube.png" alt="">
+            <img src="https://meesho.com/assets/linkedin.png" alt="">
+            <img src="https://meesho.com/assets/twitter.png" alt="">
+ 
+        </div>
+
+    </div> 
+         <div class="aboutMeesho">
+         
+    </div>
+</body>
+<script src="./scripts/footer.js"></script>
+<script>
+    let current_users = JSON.parse(localStorage.getItem('current_bussiness_user'));
+    let consumer_current_users = JSON.parse(localStorage.getItem('current_user'));
+    let supp = document.getElementById('SupplyTag');
+    let cart = document.getElementById('cart');
+    console.log(cart);
+    console.log(current_users);
+    supp.addEventListener('click',function(){
+        if ( current_users === null){
+        window.location.href = 'LoginPage.html'
+    }
+    else {
+        window.location.href = 'addProd.html'
+    }
+    }) ;
+    cart.addEventListener('click',function(){
+        if (consumer_current_users === null){
+            window.location.href = 'LoginPage.html'
+        }
+        else {
+            window.location.href = 'CartPage.html'
+        }
+    })
+    let ViewAl = document.getElementById('ViewAl');
+     ViewAl.addEventListener('click',function(){
+         window.location.href = 'showProd.html';
+     })
+</script>
+<script src="./script/search.js"></script>
+</html>
+//recheck images
+
